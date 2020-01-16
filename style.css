@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    box-shadow: 0 4px 2px -2px gray;
+
+}
+
+.menu{
+
+
+}
+
+.menulist{
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+.item-menulist{
+    padding: 2vw;
+    font-size: 1.5em;
+}
+a {
+    text-decoration: none;
+}
+
+.logo-menu{
+
+}
+
+#main{
+
+}
+
+.session-home{
+    background: url('./src/img/dog7');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.title{
+    text-align: center;
+    font-size: 3em;
+    color: wheat;
+}
+.text-title{
+    text-align: center;
+    font-size: 1.5em;
+    color: wheat;
+
+}
+
+.b-doacao {
+    font-size: 1.5em;
+    background-color: aqua;
+    color: white;
+    font-weight: 700;
+    box-shadow: -1px 1px 10px 3px rgba(204,204,204,1);
+    border-radius: 32px;
+    border: none;
+    margin: 3vw;
+    width: 20vw;
+    height: 8vh;
+}
+
+.b-adote{
+    background-color:white;
+    font-size: 1.5em;
+    font-weight: 700;
+    box-shadow: -1px 1px 10px 3px rgba(204,204,204,1);
+    color: aqua;
+    border-radius: 32px;
+    border: none;
+    margin: 3vw;
+    width: 29vw;
+    height: 8vh;
+}
+
+.session-about{
+    display: flex;
+   
+
+}
+
+.box-about.principal{
+
+}
+
+.title-about{
+    font-size: 2em;
+    color: aqua;
+
+
+}
+
+.box-about-txt{
+    font-size: 1em;
+    width: 40vw;
+    margin: 3vw;
+}
+
+.seja-voluntario{
+    font-size: 1.5em;
+    background-color: aqua;
+    color: white;
+    font-weight: 700;
+    border-radius: 32px;
+    border: none;
+    width: 20vw;
+    height: 8vh;
+}
+
+.session-dogs{
+
+}
+
+.title-adote{
+    font-size: 2em;
+    color: aqua;
+
+}
+
+.box-text-adote{
+
+}
+
+.text-adote{
+    width: 31vw;
+}
+
+.box-photos-dog{
+    display: flex;
+}
+
+.photo-dog{
+    width: 20vw;
+}
+
+.dog-border{
+    width: 17vw;;
+}
