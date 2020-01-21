@@ -1,7 +1,8 @@
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Urbane Rounded, Demi Bold;
 }
 
 .cabecalho {
@@ -10,13 +11,16 @@ body {
 }
 
 .menu{
-
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
 
 }
 
 .menulist{
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    padding: 2vh;
 
 
 }
@@ -26,14 +30,20 @@ ul {
     list-style: none;
 }
 .item-menulist{
-    padding: 2vw;
+    padding: 0px 20px 0px 4px;
     font-size: 1.5em;
+    font-weight: 700;
+    opacity: 1;
+}
+.item-menulist a {
+    text-decoration: none;
+    color: #00cc88;
 }
 a {
     text-decoration: none;
 }
-
 .logo-menu{
+    width: 15vw;
 
 }
 
@@ -41,32 +51,49 @@ a {
 
 }
 
-.session-home{
-    background: url('./src/img/dog7');
-    background-repeat: no-repeat;
-    background-size: cover;
+#home {
+    background: transparent url('./src/img/dog7.png') 0% 0% no-repeat padding-box;
+    background-size: 100%;
+    opacity: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 9vh;
 
 }
+
+
 
 .title{
+    opacity: 1;
+    font-size: 5em;
+    text-shadow: 0px 1px 3px #000;
     text-align: center;
-    font-size: 3em;
-    color: wheat;
+    color: white;
+
 }
 .text-title{
-    text-align: center;
+    opacity: 1;
     font-size: 1.5em;
-    color: wheat;
+    text-shadow: 0px 1px 19px #000000ad;
+    text-align: center;
+    color: white;
 
+}
+.buttons-home{
+    display: flex;
+    justify-content: center;
 }
 
 .b-doacao {
     font-size: 1.5em;
-    background-color: aqua;
     color: white;
     font-weight: 700;
-    box-shadow: -1px 1px 10px 3px rgba(204,204,204,1);
-    border-radius: 32px;
+    background: #00CA88 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 35px;
+    opacity: 1;
     border: none;
     margin: 3vw;
     width: 20vw;
@@ -74,78 +101,435 @@ a {
 }
 
 .b-adote{
-    background-color:white;
+    color: #00cc88;
     font-size: 1.5em;
     font-weight: 700;
-    box-shadow: -1px 1px 10px 3px rgba(204,204,204,1);
-    color: aqua;
-    border-radius: 32px;
+    background: white;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 35px;
+    opacity: 1;
     border: none;
     margin: 3vw;
     width: 29vw;
     height: 8vh;
 }
 
-.session-about{
+#about{
     display: flex;
+    padding: 15vh 0 15vh 0;
+    justify-content: space-between;
    
 
 }
 
-.box-about.principal{
+.box-about-principal{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
 
+.box-about-img{
+    align-items: center;
+    justify-content: center;
+    width: 85vw;
+    display: flex;
+}
+
 .title-about{
-    font-size: 2em;
-    color: aqua;
+    font: Demi Bold 64px/77px Urbane Rounded;
+    opacity: 1;
+    font-size: 3.5em;
+    text-shadow: 0px 3px 6px #00000029;
+    text-align: center;
+    color: #00CA88;
 
 
 }
 
 .box-about-txt{
     font-size: 1em;
-    width: 40vw;
-    margin: 3vw;
+    width: 33vw;
+    margin: 2vw;
+    opacity: 1;
 }
 
 .seja-voluntario{
-    font-size: 1.5em;
-    background-color: aqua;
+    font-size: 2em;
+    background-color: #00CA88;
     color: white;
     font-weight: 700;
     border-radius: 32px;
     border: none;
-    width: 20vw;
+    background: #00CA88 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 35px;
+    opacity: 1;
+    width: 30vw;
     height: 8vh;
 }
 
 .session-dogs{
+    background-color: #00CA88;
+    padding: 4em 0 10em 0;
 
 }
 
-.title-adote{
-    font-size: 2em;
-    color: aqua;
+.title-adotei{
+    font: Demi Bold 64px/77px Urbane Rounded;
+    opacity: 1;
+    font-size: 3.5em;
+    text-shadow: 0px 3px 6px #00000029;
+    margin: 0 0 10px 0;
+    color: white;
+    
 
 }
 
 .box-text-adote{
-
+    padding: 5vw 1vw 5vw 6vw;
+    color: white;
+    font-size: 1em;
 }
 
 .text-adote{
-    width: 31vw;
+    width: 36vw;
+    font-size: 1.2em;
 }
 
-.box-photos-dog{
+/* SLIDE ~~~~~~~~~~~~~~ */
+
+.seta{
+    background: none;
+    border: none;
+    padding: 1vw;
+    margin: 10px;
+}
+.container-photos-dog{
+    display: flex;
+}
+.adotar{
+    background: none;
+    border: 2px white solid;
+    border-radius: 30px;
+    height: 4vw;
+    width: 15vw;
+    font-size: 1.5em;
+    color: white;
+    opacity: 2;
+    padding: 1vw;
+}
+.box-dog {
+    display: block;
+    text-align: center;
+    margin: 1em;
+
+} 
+.ul-dog{
     display: flex;
 }
 
 .photo-dog{
     width: 20vw;
+    height: 30vh;
+        border-radius: 30px;
+    border: 3px white solid;
+    box-shadow: 0 0 1em white;
+}
+.txt-box-dog{
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    opacity: 1;
+    margin: 15px 0 13px 0;
 }
 
 .dog-border{
-    width: 17vw;;
+    width: 20vw;
+}
+
+/* FOOTER */
+
+#rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6vw;
+
+
+}
+
+.box-logo{
+
+}
+
+.logo-footer{
+
+}
+
+.box-contact{
+
+}
+.img-contact{
+    display: flex;
+    
+}
+
+.endereco{
+    font-size: 1.1em;
+    padding: 0.5em;
+    font-weight: 700;
+    opacity: 1;
+    color: #00cc88;
+} 
+.item-email{
+    padding: 0.5em;
+    font-size: 1.1em;
+    font-weight: 700;
+    opacity: 1;
+    color: #00cc88;
+
+}
+
+.logotipo{
+        padding: 0.5em;
+
+}
+.box-minimenu{
+    border-left: 3px #00ca88 solid;
+    padding: 1vw;
+
+}
+
+.minimenu{
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+
+.item-minimenu{
+    font-size: 1.5em;
+    font-weight: 700;
+    opacity: 1;
+    padding: 0.2em;
+    text-decoration: none;
+    color: #00cc88;
+
+}
+
+/* FORM VOLUNTÁRIO ~~~~~~~~~~~~ */
+
+
+
+#main-form{
+    background: #00cc88;
+    display: flex;
+    justify-content: center;
+    padding: 10vh;
+
+}
+
+.title-voluntario{
+    font-size: 3em;
+    color: #00cc88;
+    font-weight: 700;
+
+}
+.text-voluntario{
+
+}
+
+.container-form{
+    width: 45%;
+    border-radius: 20px;
+    background: white;
+    padding: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.formulario{
+    margin-top: 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+
+}
+
+.form-cabecalho{
+    width: 90%;
+
+
+}
+
+input{
+    height: 8vh;
+    text-align: center;
+    margin: 0.5vw;
+    border-radius: 20px;
+    border: 1px #938b8b solid;
+}
+.nomecompleto{
+    
+    width: 68%;
+
+
+}
+.idade{
+
+    width: 15%;
+}
+.email{
+    width: 86%;
+}
+.box-butttons{
+    display: flex;
+}
+.buttton {
+    color: #00cc88;
+    font-size: 1.5em;
+    font-weight: 700;
+    background: white;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 35px;
+    opacity: 1;
+    border: none;
+    margin: 13px;
+    width: 8vw;
+    height: 8vh;
+    
+}
+
+.buttton:hover{
+    background: #00cc88;
+    color: white;
+
+}
+
+.b-adotar{
+    background: #00cc88;
+    border: none;
+    border-radius: 30px;
+    height: 4vw;
+    width: 100%;
+    font-size: 1.5em;
+    color: white; 
+    opacity: 2;
+    padding: 1vw;
+}
+.question{
+    width: 100%;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 4vh 0 0 4vh;
+
+}
+
+/* FORMULARIO ADOTE ~~~~~~~*/
+
+#main-adote{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #00cc88;
+    padding: 10vh;
+}
+
+#form-adote{
+    background: white;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10vh;
+
+
+}
+
+.form-photo{
+    display: flex;
+
+
+}
+.box-txt-adotar{
+    padding: 0 0 0 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.title-adote{
+    font-size: 1.5em;
+    color: #00cc88;
+    font-weight: 700;
+
+
+}
+.txt-adote{
+    font-size: 1em;
+    color: black;
+    width: 99%;
+
+
+}
+
+/*  caixa de foto adotar */
+.box-photo-adotar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-adotar{
+    width: 10vw;
+    border-radius: 10px;
+
+
+}
+.info-dog{
+    font-size: 1.2em;
+    color: #00cc88;
+    font-weight: 700;
+    
+}
+
+/* OBRIGADO */
+
+#main-thanks{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #00cc88;
+    padding: 10vh;
+
+}
+
+.obrigado{
+
+    background: white;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 10vh;
+}
+
+.title-thanks{
+    color: #00cc88;
+    font-size: 3em;
+
+
+
+}
+
+.txt-thanks{
+    font-size: 1.2em;
+    
+
+
 }

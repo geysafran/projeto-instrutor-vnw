@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/eqk2gym.css" />
     <title>Amigão</title>
 </head>
 <body>
@@ -12,57 +13,118 @@
         <nav class="menu">
             <img src="./src/img/logo.svg" class="logo-menu">
             <ul class="menulist">
-                <li class="item-menulist"><a href class="home">Home</a></li>
-                <li class="item-menulist"><a href class="sobre">Sobre</a></li>
-                <li class="item-menulist"><a href class="adote">Adote</a></li>
-                <li class="item-menulist"><a href class="voluntario">Seja voluntário</a></li>
+                <li class="item-menulist"><a href="#home" class="home">Home<img src="./src/img/Cópia de Patinhas.svg" class="patinhas"></a></li>
+                <li class="item-menulist"><a href="#about" class="sobre">Sobre</a></li>
+                <li class="item-menulist"><a href="./adote.html" class="adote">Adote</a></li>
+                <li class="item-menulist"><a href="./voluntario.html" class="voluntario">Seja voluntário</a></li>
             </ul>
         </nav>
 
     </header>
     <main id="main">
-        <section class="session-home">
+        <section id="home">
+       
             <h1 class="title">Adote um amigo!</h1>
             <p class="text-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, id at. Est recusandae debitis</p>
-            <button class="b-doacao">Fazer doação</button><button class="b-adote">Adotar um cachorrinho</button>
+            <span class="buttons-home">
+                <button class="b-doacao">
+                   
+                    Fazer doação</button>
+                    <button class="b-adote">Adotar um cachorrinho</button>
+            </span>
+   
         </section>
-        <section class="session-about">
-            <div class="box-about-principal">
-            <h2 class="title-about">Sobre</h2>
-            <div class="box-about-txt 1">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis voluptates, blanditiis incidunt commodi sapiente nisi quo perspiciatis possimus. Tempora nostrum error impedit laborum cupiditate velit commodi deserunt aliquid quaerat incidunt
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil labore error consectetur et excepturi neque recusandae ratione dicta quis. Aliquam quod quas eligendi! Tenetur deserunt adipisci corporis dicta fugiat!
-            </div>
-            <div class="box-about-txt 2">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis voluptates, blanditiis incidunt commodi sapiente nisi quo perspiciatis possimus. Tempora nostrum error impedit laborum cupiditate velit commodi deserunt aliquid quaerat incidunt
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil labore error consectetur et excepturi neque recusandae ratione dicta quis. Aliquam quod quas eligendi! Tenetur deserunt adipisci corporis dicta fugiat!
-            </div>
-            <button class="seja-voluntario">Seja voluntário!</button>
-            </div>
-            <div class="box-about-img">
-                <img src="./src/img/dog-border.png" class="dog-border">
-            </div>
-        </section>
-        <section class="session-dogs">
-            <h2 class="title-adote">Adote</h2>
-            <div class="box-text-adote"><p class="text-adote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fuga pariatur illo ut vitae quis minus nulla voluptates excepturi! Sunt, dolore nam mollitia maxime atque officia quisquam quaerat doloribus a?</p></div>
-            <div class="box-photos-dog">
-                <img src="./src/img/dog1.jpg" class="photo-dog">
-                <img src="./src/img/dog2.jpg" class="photo-dog">
-                <img src="./src/img/dog3.jpg" class="photo-dog">
-                <img src="./src/img/dog4.jpg" class="photo-dog">
-                <img src="./src/img/dog5.jpg" class="photo-dog">
-                <img src="./src/img/dog6.jpg" class="photo-dog">
-            </div>
+            <section id="about">
+                <div class="box-about-principal">
+                <h2 class="title-about">Sobre</h2>
+                <div class="box-about-txt 1">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis voluptates, blanditiis incidunt commodi sapiente nisi quo perspiciatis possimus. Tempora nostrum error impedit laborum cupiditate velit commodi deserunt aliquid quaerat incidunt
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil labore error consectetur et excepturi neque recusandae ratione dicta quis. Aliquam quod quas eligendi! Tenetur deserunt adipisci corporis dicta fugiat!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, asperiores esse debitis fugit tempore dolor minima obcaecati veniam possimus excepturi, expedita fuga aliquid praesentium ullam animi consequuntur placeat dignissimos reiciendis.
+                    
+                </div>
+                <div class="box-about-txt 2">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis voluptates, blanditiis incidunt commodi sapiente nisi quo perspiciatis possimus. Tempora nostrum error impedit laborum cupiditate velit commodi deserunt aliquid quaerat incidunt
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos odit quibusdam, error non porro, voluptates inventore consectetur explicabo quas atque expedita consequatur dignissimos exercitationem minima vero omnis sunt officia obcaecati.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil labore error consectetur et excepturi neque recusandae ratione dicta quis. Aliquam quod quas eligendi! Tenetur deserunt adipisci corporis dicta fugiat!
 
+                </div>
+                <button class="seja-voluntario">Seja voluntário!</button>
+                </div>
+                <div class="box-about-img">
+                    <img src="./src/img/dog-border.png" class="dog-border">
+                </div>
+            </section>
+        </section>
+        
+        <section class="session-dogs">
+            <!-- CONTAINER 1 -->
+            <div class="box-text-adote">
+                <h2 class="title-adotei">Adote</h2>
+                <p class="text-adote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fuga pariatur illo ut vitae quis minus nulla voluptates excepturi! Sunt, dolore nam mollitia maxime atque officia quisquam quaerat doloribus a?</p></div>
+            <!-- CONTAINER 2 -->
+            <div class="container-photos-dog">
+                <button class="seta">
+                    <img src="./src/img/Cópia de setinha_esquerda.svg" class="setinha esquerda">
+                </button>
+                <div class="ul-dog">
+                        <div class="box-dog">
+                            <img src="./src/img/dog1.jpg" class="photo-dog">
+                            <p class="txt-box-dog">Laura<br/> 5 meses</p>
+                            <a href="./adote.html"><button class="adotar">Adotar</button></a>
+                        </div>
+                        <div class="box-dog">   
+                            <img src="./src/img/dog2.jpg" class="photo-dog">
+                            <p class="txt-box-dog">Duque<br/> 3 anos</p>
+                            <a href="./adote.html"><button class="adotar">Adotar</button></a>
+                        </div>
+                
+                        <div class="box-dog">
+                            <img src="./src/img/dog3.jpg" class="photo-dog">
+                            <p class="txt-box-dog">Laura<br/> 5 meses</p>
+                            <a href="./adote.html"><button class="adotar">Adotar</button></a>
+                        </div>
+                        <div class="box-dog">
+                            <img src="./src/img/dog4.jpg" class="photo-dog">
+                            <p class="txt-box-dog">Thor<br/> 3 meses</p>
+                            <a href="./adote.html"><button class="adotar">Adotar</button></a>
+                        </div>
+                <!-- 
+                        <li class="txt-box-dog">
+                            <img src="./src/img/dog5.jpg" class="photo-dog">
+                        </li>
+                
+                
+                        <li class="txt-box-dog">
+                            <img src="./src/img/dog6.jpg" class="photo-dog">
+                        </li> -->
+            </div>
+                <button class="seta">
+                    <img src="./src/img/Cópia de setinha_direita.svg" class="setinha direita"></button>
         </section>
     </main>
-    <footer class="rodape">
+    <footer id="rodape">
         <div class="box-logo">
-            <img src="" class="logo-footer">
+            <img src="./src/img/Grupo 5.svg" class="logo-footer">
         </div>
-        <div class="box-contact"></div>
-        <div class="minimenu"></div>
+        <div class="box-contact">
+            <figure class="img-contact">
+                <img src="./src/img/Cópia de Facebook.svg" class="logotipo">
+                <img src="./src/img/Cópia de Instagram.svg" class="logotipo">
+                <img src="./src/img/Cópia de medium.svg" class="logotipo">
+            </figure>
+
+            <p class="item-email">amigão@email.com</p>
+            <p class="endereco">Rua Rodrigues Alves, nº 5 Rio de Janeiro - RJ</p>
+        </div>
+        <div class="box-minimenu">
+            <span class="minimenu">
+                <a href="#home" class="item-minimenu">Home</a>
+                <a href="#about" class="item-minimenu">Sobre</a>
+                <a href="/adote.html" class="item-minimenu">Adote</a>
+                <a href="/voluntario.html" class="item-minimenu">Seja Voluntário</a>
+            </span>
+        </div>
     </footer>    
 </body>
 </html>

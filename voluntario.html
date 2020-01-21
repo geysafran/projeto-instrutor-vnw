@@ -1,32 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=>, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Seja Voluntário!</title>
 </head>
 <body>
-    <header class="cabecalho"></header>
-    <main class="main-form">
-        <form class="formulario">
-            <div class="form-cabecalho">
-                <div class="form-box-photo">
-                    <img src="" class="">
-                    <p class="">Luna - 5 meses</p>
-                
-                </div>
-             <div class="form-box-text">
-                <input type="text" class="nomecompleto">
-                <input type="" class="">
-                <input type="email" class="email">
-                <label class="question"></label>
-                <button class="buttton yes">sim</button> <button class="buttton no">não</button>
-                <button class="adotar">Adotar</button>
+    <header class="cabecalho">
+        <nav class="menu">
+            <img src="./src/img/logo.svg" class="logo-menu">
+            <ul class="menulist">
+                <li class="item-menulist"><a href="#home" class="home">Home<img src="./src/img/Cópia de Patinhas.svg" class="patinhas"></a></li>
+                <li class="item-menulist"><a href="#about" class="sobre">Sobre</a></li>
+                <li class="item-menulist"><a href="./adote.html" class="adote">Adote</a></li>
+                <li class="item-menulist"><a href="./voluntario.html" class="voluntario">Seja voluntário</a></li>
+            </ul>
+        </nav>
 
-            </div>
-           
-        </form>
+    </header>
+    <main id="main-form">
+        <section class="container-form">
+        
+        <div class="form-cabecalho">
+                <h2 class="title-voluntario">Seja voluntário</h2>
+                <p class="txt-voluntario">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum totam, eum esse aut distinctio recusandae veritatis commodi placeat quo tenetur corrupti neque molestias cum rem veniam quis doloremque minima at.</p>
+                
+        </div>
+        <form class="formulario">
+    
+                <input type="text" class="nomecompleto" placeholder="Nome completo">
+                <input type="number" class="idade" placeholder="Idade">
+                <input type="email" class="email" placeholder="Email">
+                <label class="question">Possui algum animal?</label>
+                <button class="buttton yes">sim</button> <button class="buttton no">não</button>
+                <button class="b-adotar"><a href="obrigado.html">Enviar</a></button>
+            </form>
+         </section>
     </main>
 </body>
 </html>
+<footer id="rodape">
+    <div class="box-logo">
+        <img src="./src/img/Grupo 5.svg" class="logo-footer">
+    </div>
+    <div class="box-contact">
+        <figure class="img-contact">
+            <img src="./src/img/Cópia de Facebook.svg" class="logotipo">
+            <img src="./src/img/Cópia de Instagram.svg" class="logotipo">
+            <img src="./src/img/Cópia de medium.svg" class="logotipo">
+        </figure>
+
+        <p class="item-email">amigão@email.com</p>
+        <p class="endereco">Rua Rodrigues Alves, nº 5 Rio de Janeiro - RJ</p>
+    </div>
+    <div class="box-minimenu">
+        <span class="minimenu">
+            <a href="#home" class="item-minimenu">Home</a>
+            <a href="#about" class="item-minimenu">Sobre</a>
+            <a href="/adote.html" class="item-minimenu">Adote</a>
+            <a href="/voluntario.html" class="item-minimenu">Seja Voluntário</a>
+        </span>
+    </div>
+</footer>  

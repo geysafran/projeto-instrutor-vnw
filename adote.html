@@ -4,30 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Adote</title>
 </head>
 <body>
-    <header class=""></header>
-    <main class="">
-        <form class="formulario">
-            <div class="form-cabecalho">
-                <div class="form-box-seja">
-                    <h2 class="title-voluntario">Seja voluntário!</h2>
-                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam nemo itaque vitae eius laudantium molestias ducimus, .</p>
-                    
-                
-                </div>
-             <div class="form-box-text">
-                <input type="text" class="nomecompleto">
-                <input type="number" class="">
-                <input type="email" class="email">
-                <label class="question"></label>
-                <button class="buttton yes">sim</button> <button class="buttton no">não</button>
-                <button class="adotar">Adotar</button>
+    <header class="cabecalho">
+        <nav class="menu">
+            <img src="./src/img/logo.svg" class="logo-menu">
+            <ul class="menulist">
+                <li class="item-menulist"><a href="./index.html" class="home">Home<img src="./src/img/Cópia de Patinhas.svg" class="patinhas"></a></li>
+                <li class="item-menulist"><a href="./index.html" class="sobre">Sobre</a></li>
+                <li class="item-menulist"><a href="./adote.html" class="adote">Adote</a></li>
+                <li class="item-menulist"><a href="./voluntario.html" class="voluntario">Seja voluntário</a></li>
+            </ul>
+        </nav>
 
-            </div>
-           
-        </form>
+    </header>
+    <main id="main-adote">
+        <section id="form-adote">
+                <div class="form-photo">
+                    <div class="box-photo-adotar">
+                        <img src="./src/img/dog5.jpg" class="img-adotar">
+                        <p class="info-dog">Luna - 5 meses</p>
+                    </div>
+                    <div class="box-txt-adotar">
+                        <h2 class="title-adote">Pronto pra ter um amiguinho?</h2>
+                        <p class="txt-adote">Antes de levar a Luna para seu novo lar, precisamos de algumas informações sobre você.</p>
+                    </div>
+                </div>
+            <form class="formulario">
+                <input type="text" class="nomecompleto" placeholder="Nome completo">
+                <input type="number" class="idade" placeholder="Idade">
+                <input type="email" class="email" placeholder="Email">
+                <label class="question">
+                    Possui algum animal?
+                </label>
+                <span class="box-butttons">
+                    <button class="buttton yes">sim</button> <button class="buttton no">não</button>
+                </span>
+                    <button class="b-adotar"><a href="obrigado.html">Adotar</a>
+                    </button>
+            </form> 
+        </section>
     </main>
+    <footer id="rodape">
+        <div class="box-logo">
+            <img src="./src/img/Grupo 5.svg" class="logo-footer">
+        </div>
+        <div class="box-contact">
+            <figure class="img-contact">
+                <img src="./src/img/Cópia de Facebook.svg" class="logotipo">
+                <img src="./src/img/Cópia de Instagram.svg" class="logotipo">
+                <img src="./src/img/Cópia de medium.svg" class="logotipo">
+            </figure>
+
+            <p class="item-email">amigão@email.com</p>
+            <p class="endereco">Rua Rodrigues Alves, nº 5 Rio de Janeiro - RJ</p>
+        </div>
+        <div class="box-minimenu">
+            <span class="minimenu">
+                <a href="#home" class="item-minimenu">Home</a>
+                <a href="#about" class="item-minimenu">Sobre</a>
+                <a href="/adote.html" class="item-minimenu">Adote</a>
+                <a href="/voluntario.html" class="item-minimenu">Seja Voluntário</a>
+            </span>
+        </div>
+    </footer>  
 </body>
 </html>
